@@ -22,8 +22,8 @@ class Application
       end
       # /add
     elsif req.path.match(/add/)
-      search_term = req.params["q"]
-      resp.write handle_search(search_term)
+      selection = req.params["item"]
+      resp.write handle_selection(selection)
     else
       resp.write "Path Not Found"
     end
