@@ -48,8 +48,7 @@ class Application
     if @@items.include?(selection)
       @@cart << selection
     else
-      resp.write "We don't have that item"
+      return "We don't have that item"
     end
-    resp.finish
   end
 end
