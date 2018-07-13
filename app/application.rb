@@ -47,6 +47,7 @@ class Application
   def handle_selection(selection)
     if @@items.include?(selection)
       @@cart << selection
+      return "added #{selection}"
     else
       return "We don't have that item"
     end
