@@ -20,6 +20,7 @@ class Application
       @@items.each do |item|
         resp.write "#{item}\n"
       end
+      
       # /add
     elsif req.path.match(/add/)
       selection = req.params["item"]
