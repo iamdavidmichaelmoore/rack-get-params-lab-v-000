@@ -49,7 +49,7 @@ class Application
       @@cart << selection
     else
       resp.write "We don't have that item"
-      resp.finish
     end
+    resp.finish
   end
 end
