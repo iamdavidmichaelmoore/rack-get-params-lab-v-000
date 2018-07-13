@@ -26,7 +26,6 @@ class Application
       resp.write handle_selection(selection)
     else
       resp.write "Path Not Found"
-    end
 
       # /search
     elsif req.path.match(/search/)
@@ -35,7 +34,6 @@ class Application
     else
       resp.write "Path Not Found"
     end
-
     resp.finish
   end
 
