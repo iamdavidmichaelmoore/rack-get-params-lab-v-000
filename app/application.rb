@@ -25,8 +25,6 @@ class Application
     elsif req.path.match(/add/)
       selection = req.params["item"]
       resp.write handle_selection(selection)
-    else
-      resp.write "Path Not Found"
 
       # /search
     elsif req.path.match(/search/)
