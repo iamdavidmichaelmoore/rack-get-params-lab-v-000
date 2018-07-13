@@ -46,7 +46,4 @@ class Application
       return "Couldn't find #{search_term}"
     end
   end
-
-  def handle_selection(selection)
-    if @@cart.inclde
 end
