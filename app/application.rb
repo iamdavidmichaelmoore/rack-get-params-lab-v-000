@@ -46,4 +46,12 @@ class Application
       return "Couldn't find #{search_term}"
     end
   end
+
+  def handle_selection(selection)
+    if @@items.include?(selection)
+      @@items << selection
+    else
+      resp.write "We don't have that item"
+    end
+  end
 end
